@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лаборатори 03 - HTML Форм ба CSS</title>
+  
+  <!-- 1. Google Fonts (Roboto) холбох хэсэг -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- 2. style.css файлыг холбож буй хэсэг -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Бүрхүүл карт -->
+  <div class="form-card">
+    
+    <!-- Relative/Absolute жишээ болох Badge -->
+    <span class="status-badge">Шинэ</span>
+
+    <!-- Гарчиг -->
+    <h2 class="form-title">Хэрэглэгчийн Бүртгэл</h2>
+    
+    <form action="#" method="POST">
+      <!-- Овог нэр талбар -->
+      <div class="form-group">
+        <label for="fullname" class="form-label">Бүрэн нэр</label>
+        <input type="text" id="fullname" class="form-input" placeholder="Нэрээ оруулна уу" required>
+      </div>
+
+      <!-- И-мэйл талбар -->
+      <div class="form-group">
+        <label for="email" class="form-label">И-мэйл хаяг</label>
+        <input type="email" id="email" class="form-input" placeholder="example@mail.com" required>
+      </div>
+
+      <!-- Нууц үг талбар -->
+      <div class="form-group">
+        <label for="password" class="form-label">Нууц үг</label>
+        <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+      </div>
+
+      <!-- Сонгох талбар -->
+      <div class="form-group">
+        <label for="gender" class="form-label">Хүйс</label>
+        <select id="gender" class="form-input form-select">
+          <option value="">Сонгоно уу</option>
+          <option value="male">Эрэгтэй</option>
+          <option value="female">Эмэгтэй</option>
+        </select>
+      </div>
+
+      <!-- Товчлуур барих хэсэг -->
+      <div class="button-group">
+        <button type="submit" class="btn btn-primary">Бүртгүүлэх</button>
+        <button type="reset" class="btn btn-secondary">Цэвэрлэх</button>
+      </div>
+    </form>
+    
+  </div>
+
+</body>
+</html>
